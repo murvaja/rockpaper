@@ -1,0 +1,35 @@
+<head>
+  <title>rockpaper</title>
+</head>
+
+<body>
+  <h1>Welcome to Rock Paper Scissors!</h1>
+  <!-- Button to reset the game -->
+  <button class="newgame">New Game </button> <br><br>
+</body>
+
+<!-- player1's page -->
+<template name="player1">
+  <form class="move" method="post">
+    <input type="radio" name="selection" value="rock" checked="{{isRock}}" /> Rock <br>
+    <input type="radio" name="selection" value="paper" checked="{{isPaper}}"/> Paper <br>
+    <input type="radio" name="selection" value="scissors" checked="{{isScissors}}"/> Scissors <br>
+    <input type="submit" /><br>
+  </form>
+  <p> {{p1Text1}} </p>
+  <p> {{p1Text2}} </p>
+  <p> {{resultText}} </p>
+</template>
+
+<!-- player2's page -->
+<template name="player2">
+  <form class="move" method="post">
+    <input type="radio" name="selection" value="rock" checked="{{isRock}}" /> Rock <br>
+    <input type="radio" name="selection" value="paper" checked="{{isPaper}}"/> Paper <br>
+    <input type="radio" name="selection" value="scissors" checked="{{isScissors}}"/> Scissors <br>
+    <input type="submit" /><br>
+  </form>
+  <p> {{p2Text1}} </p>
+  <p> {{p2Text2}} </p>
+  <p> {{resultText}} </p>
+</template>
